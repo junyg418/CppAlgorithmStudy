@@ -1,3 +1,4 @@
 *.exe
 .vscode/settings.json
 test.py
+test.cpp
