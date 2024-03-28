@@ -72,8 +72,8 @@ int main(){
     // 못간곳 체크
     for (int x_idx=0; x_idx<x_lim; x_idx++){
         for (int y_idx=0; y_idx<y_lim; y_idx++){
-            if(!is_passed[x_idx][y_idx]){
-                // length_map[x_idx][y_idx] = -1;
+            if(!is_passed[x_idx][y_idx] && prob_map[x_idx][y_idx] != 0){
+                length_map[x_idx][y_idx] = -1;
             }
             cout << length_map[x_idx][y_idx] << " ";
         }
